@@ -2733,8 +2733,8 @@ static_assert(NUM_SERVOS <= NUM_SERVO_PLUGS, "NUM_SERVOS (or some servo index) i
   #endif
 #endif
 
-#if defined(GRAPHICAL_TFT_UPSCALE) && !WITHIN(GRAPHICAL_TFT_UPSCALE, 2, 8)
-  #error "GRAPHICAL_TFT_UPSCALE must be between 2 and 8."
+#if defined(GRAPHICAL_TFT_UPSCALE) && !WITHIN(GRAPHICAL_TFT_UPSCALE, 1, 8)
+  #error "GRAPHICAL_TFT_UPSCALE must be between 1 and 8."
 #endif
 
 #if ALL(CHIRON_TFT_STANDARD, CHIRON_TFT_NEW)
