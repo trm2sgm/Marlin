@@ -61,7 +61,7 @@
   }
 
   void GcodeSuite::M666_report(const bool forReplay/*=true*/) {
-    TERN_(MARLIN_SMALL_BUILD, return);
+    //TERN_(MARLIN_SMALL_BUILD, return);
 
     report_heading_etc(forReplay, F(STR_ENDSTOP_ADJUSTMENT));
     SERIAL_ECHOLNPGM_P(
